@@ -142,7 +142,7 @@ export default function AddProduct() {
     const catId = event.target.options[selectedIndex].getAttribute("data-key");
     setProductSave({ ...productSave, [event.target.name]: catId });
 
-    const magic = category.filter((x) => x.categoryId == catId);
+    const magic = category.filter((x) => x.categoryId === parseInt(catId));
     setSubCategory(magic[0].subCategoryList);
   }
 
@@ -151,7 +151,7 @@ export default function AddProduct() {
     let subCatId = event.target.options[selectedIndex].getAttribute("data-key");
     setProductSave({ ...productSave, [event.target.name]: subCatId });
 
-    const magic = subCategory.filter((x) => x.subCategoryId == subCatId);
+    const magic = subCategory.filter((x) => x.subCategoryId === parseInt(subCatId));
     setSubCategoryType(magic[0].subCategoryTypeList);
   }
 
@@ -259,34 +259,6 @@ export default function AddProduct() {
                 />
                 <span className="i1-heading-border"></span>
               </div>
-              {/**
-              <div>
-                <label for="lname">Product Color :</label>
-                <input
-                  className="product-price"
-                  type="text"
-                  name="colorName"
-                  value={productSave.colorName}
-                  onChange={handleChange}
-                  placeholder="Product Color.."
-                  required
-                />
-                <span className="i1-heading-border"></span>
-              </div>
-              <div>
-                <label for="lname">Product Size :</label>
-                <input
-                  className="product-price"
-                  type="text"
-                  name="size"
-                  value={productSave.size}
-                  onChange={handleChange}
-                  placeholder="Product Size.."
-                  required
-                />
-                <span className="i1-heading-border"></span>
-              </div>
- */}
             </div>
           </div>
           <div className="addProduct-grid-item i2">
