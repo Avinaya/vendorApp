@@ -1,0 +1,65 @@
+.page {
+    display: grid;
+    grid-template-columns:15vw auto;
+
+  
+  }
+  .sidebar {
+    position: fixed;
+    width: 15vw;
+    height: 100%;
+    background-color: #2E2E2E;
+    color: white;
+
+    &-heading{
+        background-color: #13BEBB;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        &-part1{
+            font-size: 1.7rem;
+            font-weight: 600;
+
+        }
+        &-part2{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(0, 26, 255);
+            
+        }
+    }
+
+    &-nav{
+        // text-align: center;
+        // background-color: orange;
+        padding: 1rem .5vw;
+    
+        &-icon{
+            font-size: 2rem;
+            margin-right: .5rem;
+
+        }
+
+        &-text{
+            font-size: 1.5rem;
+
+
+        }
+    }
+  }
+  .main {
+    color: white;
+    grid-column-start: 2;
+    background-color: #1D1E1F;
+    // height: 100vh;
+    &-navbar{
+        height: 9.9vh;
+        background-color:  #2E2E2E;
+        z-index: 1;
+    }
+  }
+  
+  .color{
+      background-color: white;
+      color: white !important;
+  }

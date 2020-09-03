@@ -1,0 +1,151 @@
+.addProduct{
+    text-align: center;
+padding: 2rem;
+
+&-heading{
+    font-size: 2rem;
+}
+
+&-grid{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-gap: 1rem;
+
+    &-item{
+    background-color: #2E2E2E;
+    padding: .5rem;
+    border-radius: 5px;        
+    }
+
+}
+.i2{
+    grid-row: span 1;
+    
+}
+
+.i1{
+    &-detail{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    & label{
+        color: rgb(0, 183, 255);
+    }
+    &-heading{
+        display: block;
+        font-size: 1.4rem;
+        margin-bottom:.5rem ;
+        // padding: 2rem;
+        
+        &-border{
+            display: block;
+            margin: 1rem 0;
+            height: .1rem;
+            background-color: rgba(22, 21, 21, 0.308);
+        }
+        
+    }
+}
+
+.select-option{
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin-top: .5rem;
+    border-radius: 5px;
+}
+
+}
+.select-heading{
+    color: rgb(0, 183, 255);
+}
+.product-description{
+    &-des{
+        height: 4rem;
+    }
+    width: 100%;
+    padding: 12px 20px;
+    margin: .5rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.product-price{
+    margin-left: 1rem !important;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.select{
+    color: black;
+}
+
+
+.specification{
+
+    &-button-add{
+       margin-bottom: .5rem;
+       padding: .5rem 1rem;
+       border-radius: 100%;
+       border: 0;
+       color: white;
+       background-color: rgb(0, 183, 255);
+    }
+    &-button-remove{
+    margin-left: 1rem;
+    padding: .2rem .5rem;
+    border: 0;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    }
+
+    &-input{
+        width: 90%;
+        padding: .2rem;
+        margin-bottom: .3rem;
+
+    }
+
+    &-image{
+        width: 15rem;
+        padding: .2rem;
+
+    }
+
+}
+
+
+.button{
+    width: 30%;
+    padding: .5rem;
+    margin-top: 5rem;
+    color:white;
+    background-color: rgb(17, 224, 45);
+    border: 0;
+    border-radius: 5px;
+}
+
+.product-sizeAndColor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // background-color: yellowgreen;
+    grid-gap: 1rem;
+
+    &-item{
+        // background-color: red;
+
+        &:not(:last-child){
+            border-right: 2px solid rgb(146, 165, 41);
+
+        }
+        padding-bottom: 2rem;
+    }
+}
+.sizeColorInput{
+    padding:.3rem;
+    margin-bottom: .3rem;
+}
